@@ -48,6 +48,44 @@ section {
 	flex-wrap: wrap;
 }
 
+.trans {
+	transition: 4s;
+	width: 100 px;
+}
+
+.trans:hover {
+	height:300px;
+	width: 300px;
+}
+
+.translate {
+	transform: translate(-50px,0px)
+}
+
+.rotate:hover {
+	transform: rotate(45deg);
+}
+
+h2 {
+	animation-duration: 8s;
+	animation-name: aparecer;
+	animation-iteration-count: infinite;
+}
+
+.animate__wobble {
+	height: 40px;
+	background-color: violet;
+}
+
+input {
+	transition: 1s;
+}
+
+input:focus{
+	height: 40px;
+	background-color: yellow;
+}
+
 @media (min-width:1024px) { /*desktop*/
 .padre {
 	display: grid;

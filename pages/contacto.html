@@ -5,6 +5,7 @@
 	<title>Contacto</title>
 	<link rel="icon" type="image/jpg" href="../images/favicon.jpg"/>
 	<link rel="stylesheet" href="../estilo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
 </head>
 <body>
 	<main class="padre">
@@ -19,11 +20,13 @@
 			</ul>
 		</nav>
 		<header class="header">
-			<img src="../images/Logotexto.jpg"  class="logo">
+			<div class="rotate">
+				<img src="../images/Logotexto.jpg"  class="logo" >
+			</div>
 		</header>
 
 		<section id="section1">
-			<h2>Formulario de Contacto</h2>
+			<h2 class="animate__wobble">Formulario de Contacto</h2>
 			<div>
 				<form action="#">
 					<label>Nombre <input type="text" name=""></label> 
@@ -36,8 +39,8 @@
 					<br><br>
 					<label>Mensaje <input type="text" name=""></label> 
 					<br><br>
-					<input class="boton" type="submit" value="Enviar formulario"/>
-					<input class="boton" type="reset" value="Limpiar formulario"/>
+					<input class="boton" type="submit" value="Enviar formulario" class="translate"/>
+					<input class="boton" type="reset" value="Limpiar formulario" class="translate"/>
 					<br>
 				</form>
 			</div>
