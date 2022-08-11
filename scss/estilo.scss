@@ -2,9 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
+$display: flex;
 
 section {
-display: flex;
+display: $display;
 flex-direction: column;
 justify-content:center;
 width: 100%;
@@ -27,7 +28,7 @@ img {
 }
  
 .foto {
-    display:flex;
+    display: $display;
     height: 200px;
     justify-content: center;
     align-items: center;
@@ -35,7 +36,7 @@ img {
 	margin: 10px;
 }
 .fotologo {
-    display:flex;
+    display: $display;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -43,7 +44,7 @@ img {
 }
 
 .foto2 {
-    display:flex;
+    display: $display;
     height: 350px;
     justify-content: center;
     align-items: center;
@@ -52,7 +53,7 @@ img {
 }
 
 .form {
-	display:flex;
+	display:$display;
 	justify-content: center;
     text-align: center;
 }
