@@ -16,34 +16,39 @@ section {
     animation-name: aparecer;
     animation-iteration-count: infinite; }
 
+h2.inicio {
+  color: blue; }
+
+h2.asesorias {
+  color: green; }
+
+h2.cursos {
+  color: red; }
+
+h2.ubicacion {
+  color: violet; }
+
+h2.contacto {
+  color: aqua; }
+
 img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
-  border: 1px solid black !important; }
+  border: 1px solid black !important;
+  object-fit: contain; }
+
+.fotologo, .foto, .foto2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px; }
 
 .foto {
-  display: flex;
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 10px; }
-
-.fotologo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 10px; }
+  height: 200px; }
 
 .foto2 {
-  display: flex;
-  height: 350px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 10px; }
+  height: 350px; }
 
 .form {
   display: flex;
