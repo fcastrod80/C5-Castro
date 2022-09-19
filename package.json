@@ -1,0 +1,36 @@
+{
+  "name": "entregafinal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "validate-npm-package-license": "^3.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Francisco Castro Donoso <fcastrod@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcastrod80/C5-Castro.git"
+  },
+  "keywords": [
+    "consultoría",
+    "capacitación",
+    "cursos",
+    "pyme",
+    "prevención",
+    "RR.HH.",
+    "Santiago"
+  ],
+  "bugs": {
+    "url": "https://github.com/fcastrod80/C5-Castro/issues"
+  },
+  "homepage": "https://github.com/fcastrod80/C5-Castro#readme",
+  "description": "Este package se utiliza para crear un .css a partir de SASS",
+  "devDependencies": {}
+}

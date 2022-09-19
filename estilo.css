@@ -1,62 +1,113 @@
-*{
-	margin: 0;
-	padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0;
+  color: white; }
 
-section {
-display: flex;
-flex-direction: column;
-justify-content:center;
-width: 100%;
-border: 1px black solid;
-align-items: stretch;
-flex-wrap: wrap;
-}
+.padreflex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-evenly; }
 
-.section1{
-align-items: center;
-}
-
-.section2{
-align-items: center;
-}
-
-.section3{
-align-items: center;
-}
-
-.trans {
-	transition: 4s;
-	width: 100 px;
-}
-
-.trans:hover {
-	height:300px;
-	width: 300px;
-}
-
-.translate {
-	transform: translate(-50px,0px)
-}
-
-.rotate:hover {
-	transform: rotate(45deg);
-}
+.hijo {
+  width: 50%;
+  height: 1000px;
+  margin: 10px;
+  padding: 10px; }
 
 h2 {
-	text-align: center;
-	padding: 10px;
-	animation-duration: 8s;
-	animation-name: aparecer;
-	animation-iteration-count: infinite;
-}
+  text-align: center;
+  padding: 10px; }
 
-.animate__wobble {
-	height: 40px;
-	background-color: violet;
-}
+.seccion1 {
+  background-color: #202A25;
+  color: white; }
 
+.seccion2 {
+  background-color: #5F4BB6;
+  width: 50%; }
 
-footer{
-	text-align: center;
-}
+.seccion3 {
+  background-color: #3e8d3b;
+  width: 50%; }
+
+.otraseccion {
+  background-color: #5F4BB6;
+  color: white; }
+
+h2.inicio {
+  color: white; }
+
+h2.asesorias {
+  color: #6e3c3c; }
+
+h2.cursos {
+  color: #75da3e; }
+
+h2.ubicacion {
+  color: violet; }
+
+h2.contacto {
+  color: #dc7f21; }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid black !important;
+  object-fit: contain; }
+
+.carusel {
+  padding: 50px; }
+
+.fotologo, .foto, .foto2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px; }
+
+.foto {
+  height: 200px; }
+
+.foto2 {
+  height: 350px; }
+
+.form {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+.formulario {
+  color: blueviolet; }
+
+.lista {
+  text-align: center; }
+
+.trans {
+  transition: 4s;
+  width: 300px; }
+  .trans:hover {
+    transition: 4s;
+    width: 100px; }
+
+.translate {
+  transform: translate(-50px, 0px); }
+
+.rotate:hover {
+  transition: 4s;
+  transform: rotate(45deg); }
+
+p {
+  color: black solid 2px;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px; }
+
+.link {
+  font-size: 30px; }
+
+footer {
+  background-color: #202A25;
+  color: white;
+  text-align: center; }
