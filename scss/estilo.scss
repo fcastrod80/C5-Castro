@@ -1,0 +1,145 @@
+$colorprincipal: #202A25;
+$colortexto: white; 
+$display: flex;
+
+*{
+margin: 0;
+padding: 0;
+color: $colortexto;
+}
+
+.padreflex {
+display: $display;
+flex-flow: row wrap;
+justify-content: flex-start;
+align-items: flex-start;
+align-content: space-evenly;
+}
+
+.hijo {
+width: 50%;
+height: 1000px;
+margin: 10px;
+padding: 10px;
+}
+
+h2 {
+text-align: center;
+padding: 10px;
+}
+
+.seccion1 {
+	background-color: $colorprincipal;
+	color: $colortexto;
+}
+
+.seccion2 {
+	background-color: #5F4BB6;
+	width: 50%;
+}
+
+.seccion3 {
+	background-color: #3e8d3b;
+	width: 50%;
+}
+
+.otraseccion{
+	background-color: #5F4BB6;
+	color: $colortexto;
+}
+
+$h2:(
+	inicio: white,	
+	asesorias: rgb(110, 60, 60),
+	cursos: rgb(117, 218, 62),
+	ubicacion: violet,
+	contacto: rgb(220, 127, 33)
+);
+
+@each $pagina, $color in $h2 {
+	h2.#{$pagina} {
+		color: $color;
+}
+}
+
+@mixin imagen($lado, $borde){
+	max-width: $lado;
+	max-height: $lado;
+	border: $borde;
+}
+
+img {
+	@include imagen (100%, 1px solid black !important);
+	object-fit: contain; 
+}
+
+.carusel {
+padding: 50px;
+}
+
+.fotologo {
+	display: $display;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin: 10px;
+}
+ 
+.foto {
+    @extend .fotologo;
+    height: 200px;
+}
+
+.foto2 {
+	@extend .fotologo;
+    height: 350px;
+}
+
+.form {
+	display:$display;
+	justify-content: center;
+    text-align: center;
+}
+
+.formulario{
+	color: blueviolet
+}
+
+.lista {
+	text-align: center;
+}
+
+.trans {
+	transition: 4s;
+	width: 300px;
+    &:hover {
+        transition: 4s;
+        width: 100px;
+    }
+}
+
+.translate {
+	transform: translate(-50px,0px)
+}
+
+.rotate:hover {
+	transition: 4s;
+	transform: rotate(45deg);
+}
+
+p {
+	color: black solid 2px;
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.link {
+	font-size: 30px;
+}
+
+footer {
+	background-color: $colorprincipal;
+	color: $colortexto;
+	text-align: center;
+}
